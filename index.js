@@ -15,10 +15,10 @@ app.use('/users', userRouter);
 app.use('/questions', questionRouter);
 
 
-app.listen(process.env.port, async () => {
+app.listen(process.env.PORT, async () => {
     try{
         await connection;
-        console.log(`Server is running on Port ${process.env.port}`);
+        console.log(`Server is running on Port ${process.env.PORT}`);
 
     } catch (error){
         console.log(error.message);
